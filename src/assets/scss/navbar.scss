@@ -1,0 +1,33 @@
+@import "./variables/color.scss";
+@import "./Mixins/button.scss";
+.nav{
+    background:$secondaryColor;
+    color:$whiteColor;
+    
+    .logo,.link{
+        color: $whiteColor;
+        &:hover{
+            color: $primaryColor;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+    }
+
+}
+.recipe-img{
+    height: 33vh;
+    
+}
+.button{
+ @include button();
+}
+
+.footer{
+    margin:3rem 0rem 0rem 0rem;
+    color: #fff;
+    background: $secondaryColor;
+    padding: 2rem 2rem
+}
