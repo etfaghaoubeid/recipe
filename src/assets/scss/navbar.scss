@@ -6,6 +6,7 @@
     
     .logo,.link{
         color: $whiteColor;
+        text-decoration: none;
         &:hover{
             color: $primaryColor;
             -moz-transition: all .4s ease-in-out;
@@ -14,6 +15,10 @@
             transition: all .4s ease-in-out;
         }
 
+    }
+    .logo{
+        color: $primaryColor;
+        font-weight: bold;
     }
 
 }
@@ -30,4 +35,8 @@
     color: #fff;
     background: $secondaryColor;
     padding: 2rem 2rem
+}
+
+Input[type=text]:focus {
+    border-color:$primaryColor;
 }

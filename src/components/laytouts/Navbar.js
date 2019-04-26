@@ -8,6 +8,7 @@ import {
     NavItem,
     NavLink,
 } from 'reactstrap';
+import {Link} from "react-router-dom"
 
 export default function NavHead() {
   const [toggle,setToggle] = useState(false)
@@ -20,7 +21,7 @@ export default function NavHead() {
           <Collapse isOpen={toggle} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className ="link" href="/components/">Components</NavLink>
+                <NavLink className ="link" href="/about">About</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
